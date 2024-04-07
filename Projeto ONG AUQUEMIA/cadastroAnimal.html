@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="cadastroAnimal.css">
+
+    <title>Cadastro de Animal</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="cachorro" src="img/dogicon.svg" alt="figura de cachorro">
+        <img class="gato" src="img/caticon.svg" alt="figura de gato">
+        <h1>ONG <b>AUQUEMIA</b></h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#ONG">HOME</a></li>
+                <li><a href="#Animais">ANIMAIS</a></li>
+                <li><a href="#Voluntario">SEJA VOLUNTÁRIO</a></li>
+                <li><a href="#Contato">FAÇA UMA DOAÇÃO</a></li>
+            </ul>
+        </nav>
+
+        <div class="btnAbre" id="abre"><span>&#9776;</span></div>
+        <div class="btnFecha" id="fecha"><span>&times;</span></div>
+        <nav class="sidebar" id="sidebar">
+            <div class="menuLateral"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cadastrar Animal</a></li>
+                <li><a href="#">Cadastrar Voluntário</a></li>
+                <li><a href="#">Gestão de Doações</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="content">
+        <!--Formulário de Voluntário-->
+
+        <div class="cardAnimal">
+
+            <form class="form" id="form">
+
+                <div class="title-form">
+                    <h2>Cadastro de Animal</h2>
+                </div>
+
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-column-left">
+                            <p class="input-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="input-title" for="name">Nome:</label>
+                                <input type="text" id="character-name" placeholder="Digite o nome do Animal..."
+                                    name="character-name" minlength="3" maxlength="30" required>
+                                <!-- <a>Aqui vai a mensagem de erro</a>-->
+                            </p>
+
+                            <p class="input-form checkbox-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="checkbox-title">
+                                    Espécie:
+                                </label>
+
+                                <label for="cao">
+                                    <input type="checkbox" id="cao" name="especie" value="cao">
+                                    Cão
+                                </label>
+                                <label for="gato">
+                                    <input type="checkbox" id="gato" name="especie" value="gato">
+                                    Gato
+                                </label>
+                                <label for="passaro">
+                                    <input type="checkbox" id="passaro" name="especie" value="passaro">
+                                    Pássaro
+                                </label>
+                            </p>
+
+                            <p class="input-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="input-title" for="raca">Raça:</label>
+                                <input type="text" id="character-name" placeholder="Digite a raça do Animal..."
+                                    name="character-name" minlength="3" maxlength="50" required>
+                                <!-- <a>Aqui vai a mensagem de erro</a>-->
+                            </p>
+
+                            <p class="input-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="input-title" for="cor">Cor:</label>
+                                <input type="text" id="character-name" placeholder="Digite a cor do Animal..."
+                                    name="character-name" minlength="3" maxlength="50" required>
+                                <!-- <a>Aqui vai a mensagem de erro</a>-->
+                            </p>
+
+
+                            <p class="input-form idade-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="idade-title">
+                                    Idade:
+                                </label>
+
+                                <input type="text" id="idade" placeholder="Digite a idade...">
+                                <label for="mes">
+                                    <input type="checkbox" id="mes" name="idade" value="mes">
+                                    Meses
+                                </label>
+                                <label for="ano">
+                                    <input type="checkbox" id="ano" name="idade" value="ano">
+                                    Anos
+                                </label>
+                            </p>
+
+
+                            <p class="input-form checkbox-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="checkbox-title">
+                                    Castrado:
+                                </label>
+
+                                <label for="sim">
+                                    <input type="checkbox" id="sim" name="idade" value="sim">
+                                    Sim
+                                </label>
+                                <label for="nao">
+                                    <input type="checkbox" id="nao" name="idade" value="nao">
+                                    Não
+                                </label>
+                            </p>
+
+                            <p class="input-form checkbox-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="checkbox-title">
+                                    Microchip:
+                                </label>
+
+                                <label for="sim">
+                                    <input type="checkbox" id="sim" name="idade" value="sim">
+                                    Sim
+                                </label>
+                                <label for="nao">
+                                    <input type="checkbox" id="nao" name="idade" value="nao">
+                                    Não
+                                </label>
+                            </p>
+                        </div>
+
+
+                        <div class="form-column-right">
+                            <p class="input-form checkbox-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label class="checkbox-title">
+                                    Status:
+                                </label>
+
+                                <label for="lar">
+                                    <input type="checkbox" id="lar" name="status" value="lar">
+                                    Lar Temporário
+                                </label>
+                                <label for="tratamento">
+                                    <input type="checkbox" id="tratamento" name="status" value="tratamento">
+                                    Em Tratamento
+                                </label>
+                                <label for="adocao">
+                                    <input type="checkbox" id="adocao" name="status" value="adocao">
+                                    Disponível para Adoção
+                                </label>
+                            </p>
+
+                            <p class="input-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label for="voluntario">Voluntário Resp.:</label>
+                                <input type="text" id="character-name" placeholder="Digite o Voluntário Responsável..."
+                                    name="character-name" minlength="3" maxlength="30" required>
+                                <!-- <a>Aqui vai a mensagem de erro</a>-->
+                            </p>
+
+                            <p class="input-form">
+                                <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                <label for="clinica">Clínica Resp.:</label>
+                                <input type="text" id="character-name" placeholder="Digite a Clínica Responsável..."
+                                    name="character-name" minlength="3" maxlength="30" required>
+                                <!-- <a>Aqui vai a mensagem de erro</a>-->
+                            </p>
+
+                            <div class="form-row-right">
+                                <p class="input-form mensagem-vacina">
+                                    <label for=""><img src="img/pawicon.svg" alt="Pata de Cachorro"></label>
+                                    <label for="vacina">Vacinas:</label>
+                                    <textarea name="vacina" id="vacina" minlength="30" maxlength="300"
+                                        rows="7"></textarea>
+                                </p>
+
+                                <div class="form-row-right-foto">
+                                    <img src="img/Cão.jpg" alt="Cachorro">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="input-form mensagem">
+                        <label for="historico"><img src="img/pawicon.svg" alt="Pata de Cachorro">Histórico:</label>
+                        <textarea name="historico" id="historico" minlength="30" maxlength="500" rows="3"></textarea>
+                    </p>
+
+                    <div class="btn-cadastrar">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        Copyright &copy;
+    </footer>
+
+    <script type="text/javascript" src="scriptPagina.js"></script>
+</body>

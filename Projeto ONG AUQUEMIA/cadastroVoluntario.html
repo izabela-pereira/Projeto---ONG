@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="cadastroVoluntario.css">
+
+    <title>Cadastro de Voluntário</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="cachorro" src="img/dogicon.svg" alt="figura de cachorro">
+        <img class="gato" src="img/caticon.svg" alt="figura de gato">
+        <h1>ONG <b>AUQUEMIA</b></h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#ONG">HOME</a></li>
+                <li><a href="#Animais">ANIMAIS</a></li>
+                <li><a href="#Voluntario">SEJA VOLUNTÁRIO</a></li>
+                <li><a href="#Contato">FAÇA UMA DOAÇÃO</a></li>
+            </ul>
+        </nav>
+
+        <div class="btnAbre" id="abre"><span>&#9776;</span></div>
+        <div class="btnFecha" id="fecha"><span>&times;</span></div>
+        <nav class="sidebar" id="sidebar">
+            <div class="menuLateral"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cadastrar Animal</a></li>
+                <li><a href="#">Cadastrar Voluntário</a></li>
+                <li><a href="#">Gestão de Doações</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="content">
+        <!--Formulário de Voluntário-->
+        <div class="cardVoluntário" id="cadVoluntario">
+            <form class="form" id="form">
+                <div class="title-form">
+                    <h2>Cadastro de Voluntário</h2>
+                </div>
+
+                <fieldset>
+                    <p class="input-form">
+                        <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="character-name" placeholder="Digite o nome do Voluntário..."
+                            name="character-name" minlength="3" maxlength="50" required>
+                        <!-- <a>Aqui vai a mensagem de erro</a>-->
+                    </p>
+
+                    <div class="form-row">
+                        <p class="input-form">
+                            <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" placeholder="Digite o telefone...">
+                            <!--  <a>Aqui vai a mensagem de erro</a>-->
+                        </p>
+
+                        <p class="input-form">
+                            <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Digite o email..." required>
+                            <!-- <a>Aqui vai a mensagem de erro</a>-->
+                        </p>
+                    </div>
+
+                    <p class="input-form">
+                        <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" placeholder="Digite o endereço do Voluntário...">
+                        <!-- <a>Aqui vai a mensagem de erro</a>-->
+                    </p>
+
+                    <div class="form-row">
+                        <p class="input-form">
+                            <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                            <label for="numero">Número:</label>
+                            <input type="number" id="numero" placeholder="Digite o número do endereço...">
+                            <!-- <a>Aqui vai a mensagem de erro</a>-->
+                        </p>
+
+                        <p class="input-form">
+                            <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" placeholder="Digite o Bairro...">
+                            <!-- <a>Aqui vai a mensagem de erro</a>-->
+                        </p>
+                    </div>
+
+                    <p class="input-form">
+                        <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" placeholder="Digite o Complemento...">
+                        <!-- <a>Aqui vai a mensagem de erro</a>-->
+                    </p>
+
+                    <p class="input-form interesse-form">
+                        <img src="img/pawicon.svg" alt="Pata de Cachorro">
+                        <label class="interesse-title">
+                            Interesse:
+                        </label>
+
+
+                        <label for="lar">
+                            <input type="checkbox" id="lar" name="interesse" value="lar">
+                            Lar temporário
+                        </label>
+                        <label for="tratamento">
+                            <input type="checkbox" id="tratamento" name="interesse" value="tratamento">
+                            Suporte Veterinário
+                        </label>
+                        <label for="evento">
+                            <input type="checkbox" id="evento" name="interesse" value="evento">
+                            Organização e Participação em Eventos
+                        </label>
+                        <label for="resgate">
+                            <input type="checkbox" id="resgate" name="interesse" value="resgate">
+                            Auxílio em Resgates
+                        </label>
+                    </p>
+
+
+                    <p class="input-form mensagem">
+                        <label for="disponibilidade"><img src="img/pawicon.svg" alt="Pata de Cachorro">Descreva sua
+                            disponibilidade:</label>
+                        <textarea name="disponibilidade" id="disponibilidade" minlength="30" maxlength="500"
+                            rows="2"></textarea>
+                    </p>
+
+                    <div class="btn-cadastrar">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        Copyright &copy;
+    </footer>
+
+    <!--Chamando o arquivo do JavaScript -->
+    
+    <script src="scriptCadastroVoluntario.js"></script>
+    <script src="scriptLogin.js"></script>
+    <script type="text/javascript" src="scriptPagina.js"></script>
+
+
+</body>

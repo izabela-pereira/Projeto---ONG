@@ -1,0 +1,552 @@
+/*Estilização Local da página*/
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    /*font-family: "Poppins", sans-serif;*/
+}
+
+
+:root,
+[data-bg-theme=special] {
+    --bg-body-color: #240046;
+    --bg-body-header: #240046;
+    --bg-color-text: #9d4edd;
+    --bg-color-text-1: #240046;
+    --bg-color-hover: #8e29b9;
+    --bg-btn: #ff9e00;
+    --bg-btn-1: #e88f22;
+    --bg-btn-hover: #e9b752;
+    --bg-card-color: #d9d9d9;
+
+
+
+}
+
+
+/*Classes Locais da página*/
+body {
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 100vh;
+    background-color: var(--bg-body-color);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+header {
+    height: auto;
+    padding: 0;
+    background-color: var(--bg-body-header);
+
+    color: var(--bg-color-text);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    position: sticky;
+
+
+
+    top: 0;
+
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+header img {
+    padding: 0;
+}
+
+.cachorro {
+    width: 5rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+
+}
+
+.gato {
+    width: 5rem;
+    position: absolute;
+    top: 3.7rem;
+    right: 5.2rem;
+}
+
+header h1 {
+    max-width: 100%;
+    margin-left: 2.5rem;
+    padding: 1.6rem 5.6rem;
+    color: var(--bg-color-text);
+    font-weight: lighter;
+}
+
+
+.nav-menu {
+    width: 100%;
+    background-color: var(--bg-body-header);
+    text-align: center;
+    margin: 0 -2rem;
+    padding: 0rem;
+
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0.7rem;
+
+    text-align: center;
+    align-items: center;
+
+    justify-content: left;
+    margin-right: 1.5rem;
+
+
+}
+
+.nav-menu ul li {
+    width: auto;
+    margin-top: 10px;
+    padding: 0px 2.5rem;
+}
+
+.nav-menu ul li:hover {
+    width: auto;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: var(--bg-btn-hover);
+    font-size: 1.5rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--bg-btn);
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+
+.sidebar {
+    top: 4.5rem;
+    width: 18.5rem;
+    height: 88%;
+    background-color: var(--bg-color-text);
+    border-radius: 1rem;
+    position: fixed;
+    left: -18.5rem;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+
+}
+
+.sidebar li {
+    margin-top: 1rem;
+
+}
+
+.sidebar li a {
+    margin-top: 0.5rem;
+    color: var(--bg-btn);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    display: block;
+}
+
+.sidebar:hover {
+    width: 18.5rem;
+}
+
+.sidebar ul li:hover {
+    width: auto;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: var(--bg-btn-hover);
+    font-size: 1.8rem;
+}
+
+
+.menuLateral {
+    position: fixed;
+    top: 2px;
+    left: 52px;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+.btnAbre {
+    position: absolute;
+    top: 1.3rem;
+    left: 1.25rem;
+    cursor: pointer;
+}
+
+.btnFecha {
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+
+.btnAbre span {
+    font-size: 2rem;
+
+}
+
+.btnFecha span {
+    font-size: 3.8rem;
+
+}
+
+.sidebar.mostra {
+    left: 0;
+    margin-left: 1.4rem;
+}
+
+
+.content {
+    width: 100%;
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+}
+
+
+.cardAnimal {
+    margin: 1rem 2.5rem;
+    padding-bottom: 0.5rem;
+    /*text-align: justify;*/
+    font-weight: lighter;
+    background-color: var(--bg-card-color);
+    border-radius: 0.8rem;
+    z-index: -1;
+    display: flex;
+
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+*/
+}
+
+
+.cardAnimal h2 {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: left;
+    color: var(--bg-color-text-1);
+
+}
+
+.cardAnimal h6 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #020202;
+}
+
+.cardAnimal p {
+    /*padding: 0rem 1rem;
+    margin: 0.3rem;*/
+
+    line-height: 1.1;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.cardAnimal img {
+    width: 1rem;
+    margin-right: 0.3rem;
+    align-items: center;
+
+}
+
+footer {
+    margin: 0.05rem auto;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+
+/*Classes do Cadastro de Voluntário */
+
+
+.form {
+    margin: 0 auto;
+
+    font-weight: lighter;
+    background-color: var(--bg-card-color);
+    border-radius: 0.8rem;
+
+    width: 95%;
+}
+
+.title-form {
+    text-align: center;
+  display: inline;
+}
+
+.title-form h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--bg-color-text-1);
+   
+   
+}
+
+
+.title-form h6 {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--bg-color-text-1);
+
+}
+
+
+fieldset {
+    border: 0;
+
+}
+
+
+.form-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.1rem 0;
+    justify-content: space-between;
+
+}
+
+
+.form-column-left {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 0;
+
+    width: 35%;
+}
+
+
+.form-row-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.1rem 0;
+    justify-content: space-between;
+
+}
+
+.form-column-right {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 0;
+
+    width: 60%;
+}
+
+
+.input-form {
+    /*margin-top: 1rem;*/
+
+    width: 100%;
+    display: flex;
+    /*gap: 1rem;*/
+
+}
+
+
+label {
+    font-weight: lighter;
+    display: inline-block;
+    margin: 0.4rem 0;
+    padding: 0 0rem;
+
+
+    white-space: nowrap;
+}
+
+
+input {
+    margin: 0.3rem 0;
+    padding: 0.4rem 0.2rem;
+    width: 100%;
+    border: 0;
+    border-radius: 0.2rem;
+}
+
+.input-title {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.checkbox-form {
+    margin: 0.3rem 0;
+    width: 100%;
+
+    display: flex;
+
+}
+
+.checkbox-form label {
+    align-items: center;
+    width: fit-content;
+
+}
+
+.checkbox-form input {
+    margin: 0 0.7rem;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-between;
+    display: inline;
+
+}
+
+.checkbox-form-title {
+    font-weight: lighter;
+    align-items: center;
+}
+
+
+.idade-form {
+    /*margin: 0.3rem 0;*/
+    width: 100%;
+    display: block;
+}
+
+
+.idade-form label {
+    margin-bottom: 0;
+    align-items: center;
+    width: fit-content;
+
+
+}
+
+.idade-form input {
+    /*margin: 0 0.7rem;*/
+    align-items: center;
+    width: fit-content;
+    justify-content: space-between;
+}
+
+.idade-title {
+    font-weight: lighter;
+
+}
+
+
+
+.mensagem {
+    display: inline;
+}
+
+#historico {
+    width: 100%;
+    margin-top: -0.4rem;
+}
+
+.mensagem-vacina {
+    display: inline;
+}
+
+#vacina {
+    width: 90%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    margin-bottom: 0;
+
+}
+
+.form-row-right-foto img {
+    width: 15rem;
+    justify-content: end;
+    align-items: end;
+    margin: 0 0;
+
+
+}
+
+
+
+.form a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+
+button {
+    background-color: var(--bg-color-text);
+    color: var(--bg-color-text-1);
+    width: 12rem;
+    border-radius: 0.5rem;
+    padding: 0.15rem;
+    border: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.btn-cadastrar {
+    display: flex;
+    justify-content: end;
+}
+
+.form.error input {
+    border-color: #ff3b25;
+}
+
+.form.error a {
+    color: #ff3b25;
+    visibility: visible;
+}
